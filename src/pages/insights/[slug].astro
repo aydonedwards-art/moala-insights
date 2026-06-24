@@ -1,0 +1,42 @@
+---
+import Base from '../../layouts/Base.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('insights', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+const fmt = post.data.date.toLocaleDateString('en-AU', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+---
+<Base
+  title={`${post.data.title} — Moala Global`}
+  description={post.data.dek}
+  cover={post.data.cover}
+  type="article"
+  published={post.data.date.toISOString()}
+>
+  <article>
+    <div class="article-head">
+      <div class="meta">
+        <span class="pillar">{post.data.pillar}</span>
+        <span class="dot"></span>
+        <span class="date">{fmt}</span>
+        <span class="dot"></span>
+        <span class="date">{post.data.readTime} min read</span>
+        {post.data.ongoing && <span class="ongoing">Ongoing</span>}
+      </div>
+      <h1>{post.data.title}</h1>
+      <p class="dek">{post.data.dek}</p>
+    </div>
+    <div class="article-rule"><hr /></div>
+    <div class="prose">
+      <Content />
+    </div>
+    <div class="article-foot">
+      <a class="back" href="/">&larr; All insights</a>
+    </div>
+  </article>
+</Base>

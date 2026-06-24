@@ -1,0 +1,120 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('insights', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const articles = posts.map((p) => ({
+  t: p.data.title,
+  p: p.data.pillar,
+  d: p.data.date.toISOString().slice(0, 10),
+  r: p.data.readTime,
+  k: p.data.dek,
+  ongoing: p.data.ongoing,
+  u: `/insights/${p.id}/`,
+}));
+---
+<Base
+  title="Insights & analysis — Moala Global"
+  description="Writing on gender, political economy, climate, and the governance of AI in international development."
+>
+  <section class="head">
+    <p class="eyebrow">Moala Global</p>
+    <h1>Insights &amp; <em>analysis</em></h1>
+    <p class="dek">Writing on gender, political economy, climate, and the governance of AI in international development.</p>
+  </section>
+
+  <div class="controls">
+    <div class="search">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#2a2521" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input id="q" type="text" placeholder="Search insights..." autocomplete="off" />
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+  <div class="count" id="count"></div>
+
+  <main>
+    <div class="grid" id="grid"></div>
+    <div class="pager" id="pager"></div>
+  </main>
+
+  <script is:inline define:vars={{ articles }}>
+    const ARTICLES = articles;
+    const PILLARS = ["All", "AI Governance", "Aid & Budget", "Climate & Pacific", "Research Translation"];
+    const PER_PAGE = 6;
+    let filter = "All", query = "", page = 1;
+
+    const fmt = (iso) => new Date(iso + "T00:00:00").toLocaleDateString("en-AU", { day: "numeric", month: "short", year: "numeric" });
+    const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+
+    function chips() {
+      const c = document.getElementById("chips");
+      c.innerHTML = "";
+      PILLARS.forEach((p) => {
+        const b = document.createElement("button");
+        b.className = "chip" + (p === filter ? " active" : "");
+        b.textContent = p;
+        b.onclick = () => { filter = p; page = 1; render(); };
+        c.appendChild(b);
+      });
+    }
+
+    function matches() {
+      return ARTICLES.filter((a) => {
+        const okP = filter === "All" || a.p === filter;
+        const okQ = !query || (a.t + " " + a.k + " " + a.p).toLowerCase().includes(query.toLowerCase());
+        return okP && okQ;
+      });
+    }
+
+    function render() {
+      chips();
+      const list = matches();
+      const pages = Math.max(1, Math.ceil(list.length / PER_PAGE));
+      if (page > pages) page = pages;
+      const slice = list.slice((page - 1) * PER_PAGE, page * PER_PAGE);
+
+      document.getElementById("count").textContent =
+        list.length + (list.length === 1 ? " article" : " articles") +
+        (filter !== "All" ? " in " + filter : "") + (query ? ' matching "' + query + '"' : "");
+
+      const g = document.getElementById("grid");
+      g.innerHTML = "";
+      if (!slice.length) {
+        g.innerHTML = '<div class="empty" style="grid-column:1/-1">No insights match that search. Try another term or clear the filter.</div>';
+      }
+      slice.forEach((a) => {
+        const card = document.createElement("a");
+        card.className = "card";
+        card.href = a.u;
+        card.innerHTML =
+          '<div class="meta"><span class="pillar">' + esc(a.p) + '</span><span class="dot"></span>' +
+          '<span class="date">' + fmt(a.d) + '</span>' +
+          (a.ongoing ? '<span class="ongoing">Ongoing</span>' : '') + '</div>' +
+          '<h2>' + esc(a.t) + '</h2><p>' + esc(a.k) + '</p>' +
+          '<span class="read">' + a.r + ' min read &nbsp;<span class="arrow">&rarr;</span></span>';
+        g.appendChild(card);
+      });
+
+      const pg = document.getElementById("pager");
+      pg.innerHTML = "";
+      if (pages > 1) {
+        const mk = (label, p, opts = {}) => {
+          const b = document.createElement("button");
+          b.textContent = label;
+          if (opts.active) b.className = "active";
+          if (opts.disabled) b.disabled = true;
+          else b.onclick = () => { page = p; render(); window.scrollTo({ top: 0, behavior: "smooth" }); };
+          return b;
+        };
+        pg.appendChild(mk("‹", page - 1, { disabled: page === 1 }));
+        for (let i = 1; i <= pages; i++) pg.appendChild(mk(i, i, { active: i === page }));
+        pg.appendChild(mk("›", page + 1, { disabled: page === pages }));
+      }
+    }
+
+    document.getElementById("q").addEventListener("input", (e) => { query = e.target.value; page = 1; render(); });
+    render();
+  </script>
+</Base>
