@@ -6,7 +6,7 @@ dek: "A practical framework for aid organisations adopting AI without abandoning
 cover: "/ai-governance-cover.png"
 readTime: 7
 ongoing: false
-draft: true
+draft: false
 ---
 
 The development sector has adopted artificial intelligence faster than it has governed it. Drafting, synthesis, translation, analysis: the tools are already inside the workflow of most organisations doing aid, research and policy work, whether or not anyone has written down what they are permitted to do. That gap between adoption and governance is where the real exposure sits. AI is an accelerant, and an ungoverned accelerant speeds up a sector's existing risks just as readily as it speeds up its output.
@@ -16,12 +16,13 @@ For work that is sensitive, confidential and often culturally grounded, those ri
 - **Inaccuracy and over-claiming** presented with fluent, false confidence.
 - **Breaches of confidentiality** when community or client data passes through tools no one has vetted.
 - **Conflicts of interest** that slip through because nothing flags them.
-- **Culturally inappropriate handling of community data**, especially Indigenous and Pacific data.
+- **Culturally inappropriate handling of community data.**
 - **Erosion of human accountability**, as judgement quietly migrates from the practitioner to the model.
+- **A widening misalignment between how NGOs are adopting AI and how DFAT and donors expect it to be governed**, which can produce unintended consequences downstream.
 
 One principle resolves most of them: AI should augment professional judgement, never replace it. Every AI-assisted output is verified, safeguarded and owned by a human before it is used. The rest of a governance framework is simply the machinery that holds that principle in place when deadlines, fatigue and convenience push against it.
 
-I built the framework below for Moala Advisory's own AI-intensive practice across international development, GEDSI, government advisory and research. It is deliberately an operating model, not a values statement, and the same building blocks scale from a single practice to a multi-stakeholder organisation.
+I have developed the framework below for Moala Global, and to respond to a sector risk and capability gap. It is deliberately an operating model, not a values statement, and the same building blocks scale from a single practice to a multi-stakeholder organisation. It is a work in progress: I am developing it in the open and actively invite collaboration with suitable experts — in AI governance, data ethics, GEDSI and Pacific data sovereignty — to test and extend it.
 
 ## The framework
 
@@ -31,7 +32,7 @@ Five components, each doing distinct work.
 
 **An AI use policy.** Plain guardrails for responsible, confidential and conflict-aware use: what AI may and may not do, and where human sign-off is mandatory. The value of a written policy is that it converts good intentions into a standard you can actually hold people to.
 
-**An evidence and assurance standard.** A multi-gate verification model that checks every output for accuracy, sourcing and fitness-for-purpose before it is relied on. It embeds the CARE Principles for Indigenous data governance, alongside culturally grounded checks and GEDSI markers, so that assurance covers not only whether an output is *correct* but whether it is *appropriate*.
+**An evidence and assurance standard.** A multi-gate verification model that checks every output for accuracy, sourcing and fitness-for-purpose before it is relied on. It embeds the [CARE Principles for Indigenous data governance](https://www.gida-global.org/careprinciples), alongside culturally grounded checks and GEDSI markers, so that assurance covers not only whether an output is *correct* but whether it is *appropriate*.
 
 **A safeguarding and conduct framework.** Controls for confidentiality, conflict of interest and appropriate use, written for the kinds of data and relationships development work actually involves.
 
@@ -49,7 +50,7 @@ Most failures of AI governance are not exotic. They are an output that went out 
 
 The framework starts from established responsible-AI foundations — human oversight, accountability, transparency, fairness, privacy and security — and translates them into operating reality rather than restating them as aspirations. Assurance is built into the workflow rather than bolted on afterwards, so accuracy, sourcing and fitness-for-purpose are checked *before* an output is trusted. Safeguarding controls and the training roadmap exist so the framework is used, reviewed and improved rather than filed.
 
-It is anchored to recognised references — Australia's AI Ethics Principles and the CARE Principles for Indigenous data governance — while tracking the maturing standards landscape, including the NIST AI Risk Management Framework and ISO/IEC 42001. Anchoring matters: it means the framework is auditable against external benchmarks, not just internally coherent.
+It is anchored to recognised references — [Australia's AI Ethics Principles](https://www.finance.gov.au/government/public-data/data-and-digital-ministers-meeting/national-framework-assurance-artificial-intelligence-government/implementing-australias-ai-ethics-principles-government) and the CARE Principles for Indigenous data governance — while tracking the maturing standards landscape, including the [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) and ISO/IEC 42001. Anchoring matters: it means the framework is auditable against external benchmarks, not just internally coherent.
 
 ## Built for a practice, designed to scale
 
