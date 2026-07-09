@@ -59,10 +59,6 @@ A Pacific-convened talanoa on AI — bringing together the creatives, community 
 
 ---
 
-*This piece is commentary and positioning; it publishes no ENSO Tracker findings and does not draw on tracker data. Method note: sourced and fact-checked directly from primary UN, UNESCO, Anthropic and Pacific government/media materials; no LinkedIn or secondary social commentary used as a primary source. All citations are inline hyperlinks to primary sources.*
-
-*AI-assisted, human-accountable. Research fan-out, source assembly, drafting support, and independent verification were performed by AI systems (Claude, Anthropic) directed by Aydon Moala-Edwards. All judgments, confidence ratings, and final text are the responsibility of Aydon Moala-Edwards, who verified material claims against the primary sources linked above. Method: Moala Evidence Standard v2 (commentary tier — no tracker findings published).*
-
 *Moala Global is a Pacific and Moanan-focused research and decision-infrastructure practice working at the intersection of AI governance, climate and human security.*
 
 *Moala Global · Insight for equity in a complex world · July 2026 · CC BY 4.0*  
