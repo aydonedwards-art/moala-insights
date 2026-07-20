@@ -10,6 +10,22 @@ draft: false
 
 When the world exploited their oceans for tuna, the Pacific came together and set their own terms. Next is artificial intelligence.
 
+> **In one screen**
+>
+> **The plan** — The Pacific Islands Forum convenes it, the Parties to the Nauru Agreement can advise on structure, and PNG and Tonga are placed to lead. Recruit the region's own AI experts first, agree a compact, then negotiate on two fronts — with Canberra and with the frontier-model companies — before Australia's AI legislation is drafted in early 2027.
+>
+> **The proof** — The Pacific has run this play before: eight states turned tuna from a giveaway into a collective bargain, lifting the revenue they keep from about US$50 million to close to half a billion.
+>
+> **The asset, and the rule** — The Pacific's data — fisheries, seabed, marine genetics, geography, knowledge systems — is exactly what an AI economy wants. The climate commons are already free; never cede the sovereign classes.
+>
+> **The mechanism** — Australia treated a foreign machine on its own soil, Pine Gap, as a sovereignty question. The Pacific's legal claim over research in its own waters is stronger — and unused.
+>
+> **The precedents** — Māori, Aboriginal and Torres Strait Islander peoples, the African Union, the EU and DEPA have all built collective data-sovereignty leverage. Borrow what works.
+>
+> **The multiplier** — Only the Pacific can fuse the indigenous data-sovereignty blueprint with full statehood.
+>
+> **The foundation** — The ocean, land and people of the Pacific is everything. This is what must be protected, not extracted. If we do that, then we can share what we have with the world, but on Pacific terms.
+
 ## 1. The proof already exists
 
 In the early 1980s, eight Pacific states formed [the Parties to the Nauru Agreement](https://www.pnatuna.com/content/about-pna) over a single fact: their waters held roughly half the world's skipjack tuna, and distant fleets were taking it for almost nothing. In 2007 they introduced [the Vessel Day Scheme](https://tunapacific.ffa.int/2018/12/07/tuna-diplomacy-is-one-of-the-game-changers-for-the-pacific/) — selling not fish but the right to fish for a day, coordinated across the members under a minimum price no member undercuts. The revenue the islands retained [rose from about US$50 million in 2010 to close to half a billion by 2016](https://foreignpolicy.com/2021/03/05/tuna-fishing-overfishing-conservation-pacific-islands-skipjack-pna/), on a fishery landing some US$2.2 billion a year. Nothing about the ocean changed. The rule about who priced it did.
@@ -53,4 +69,18 @@ But both must act as peoples inside a state, negotiating with a Crown or a Commo
 
 ## 6. The bloc — who, what, how, when
 
-**Who convenes it.** The Pacific Islands Forum at the apex — its [2050 Strategy for the Blue Pacific Continent](https://forumsec.org/2050) already names Pacific states 'custodians' of their ocean and carries a Technology and Connectivity pathway to hang this on. The Parties to the Nauru Agreement as the nucleus: eight states that already bargain collectively and trust the model. The Pacific Community, the Forum Fisheries Agency, SPREP and the University of the South Pacific as the machinery — proof the region can run shared technical institutions. And underneath all of it, the region's own people: the bloc's first act should be to recruit the Pacific's own AI experts and technologists — including the young builders already working with
+**Who convenes it.** The Pacific Islands Forum at the apex — its [2050 Strategy for the Blue Pacific Continent](https://forumsec.org/2050) already names Pacific states 'custodians' of their ocean and carries a Technology and Connectivity pathway to hang this on. The Parties to the Nauru Agreement as the nucleus: eight states that already bargain collectively and trust the model. The Pacific Community, the Forum Fisheries Agency, SPREP and the University of the South Pacific as the machinery — proof the region can run shared technical institutions. And underneath all of it, the region's own people: the bloc's first act should be to recruit the Pacific's own AI experts and technologists — including the young builders already working with these tools on every island with a connection — and put them beside the policy people from day one. Technology is understood by the people who build it. A region that needs consultants to explain the thing it is negotiating over is already on the back foot.
+
+**Who leads it.** The leadership already exists in the region. Papua New Guinea has gone furthest: a [national AI strategy](https://www.ict.gov.pg/national-ai-bx-strategy/), a government AI adoption framework, and a Prime Minister who calls ICT and AI ["the engine of PNG's next 50 years"](https://www.pmnec.gov.pg/pm-marape-opens-digital-transformation-summit-calls-ict-and-ai-the-engine-of-pngs-next-50-years/). Tonga pairs a young, technology-minded Prime Minister with a digital-first government already running AI services in Tongan, and the UN's regional directors judge it ["well placed to bring this Pacific perspective to the future of AI"](https://matangitonga.to/2026/07/18/pacifics-stake-shaping-ais-future). Port Moresby and Nukuʻalofa, convening together under the Forum, is a credible axis for the whole region.
+
+**What it agrees.** A Pacific AI Sovereignty Compact: shared CARE-based principles; a standing register of the sovereign data classes that are never ceded (fisheries, genetics, seabed, geography, and — community-governed — traditional knowledge); a consent-and-benefit-sharing regime for everything else; a collective mandate to negotiate as one bloc; and a long ambition toward shared data and compute infrastructure. El Niño data is contributed openly as the good-faith commons that opens the door.
+
+**How it negotiates.** On two fronts, in a fixed order. First the Pacific meets the Pacific — governments and regional bodies in the room, Australia not yet in it — and writes its own plan. Then the bloc negotiates twice over: with Canberra, over the terms on which AI enters the aid program, the data centres' regional reach and the forthcoming Australian standards; and with the frontier-model companies themselves, over Pacific languages, Pacific data and Pacific access. Australia has a genuine role in the second track — the frontier labs are overwhelmingly American, Canberra holds the relationships, and it can broker the room. But facilitation is not authority. A seat Australia arranges is worth having only if the Pacific arrives holding its own terms.
+
+**When.** The clock is Canberra's. Australia has announced an [Office of Artificial Intelligence](https://www.canberratimes.com.au/story/9310618/anthony-albanese-established-new-pmc-ai-office-to-make-australia-world-first/) with mandatory national standards and [legislation promised for early 2027](https://www.techtimes.com/articles/320755/20260716/australia-rejects-ai-copyright-carve-out-pm-calls-unlicensed-training-theft.htm). The bloc's founding sequence — principles agreed, Forum mandate secured, negotiating team stood up — needs to land before national cabinet settles those standards and the drafting begins. That is months, not years. Medium term: build the institution and the negotiating capacity, on the Fisheries Agency model — a Forum Fisheries Agency for data and AI. Long term: bargain as a bloc, with a Vessel-Day-style instrument that turns principle into priced, bankable terms. The honest constraint is the one that can break any cartel: solidarity. The Nauru Agreement works because no member undercuts the floor. An AI bloc lives or dies on the same discipline.
+
+## 7. The foundation
+
+Everything above is the policy and legal scaffolding. It rests on a claim that is not mine to make in this register: that the ocean is not the empty space between islands but the homeland itself — that for Pacific peoples, the sea and the land are one continuous inheritance, and that reading it, naming it and deciding its use are acts of belonging, not administration.
+
+The ocean, land and people of the Pacific is everything. This is what must be protected, not extracted. If we do that, then we can share what we have with the world, but on Pacific terms.
